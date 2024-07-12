@@ -1,0 +1,32 @@
+:root {
+  --dark: #2F303A;
+  --blue: #2196F3;
+  --black: #212121;
+  --gray: #757575;
+  --light: #F5F4FA;
+}
+
+.hero {
+  padding: 100px 0;
+  text-align: center;
+  background-color: var(--dark);
+  color: var(--light);
+}
+
+button {
+  padding: 5px 20px;
+  background-color: var(--blue);
+  color: var(--light);
+}
+
+footer {
+  background-color: var(--dark);
+}
+
+h2, h3 {
+  color: var(--black);
+}
+
+p {
+  color: var(--gray)
+}
