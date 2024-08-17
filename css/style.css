@@ -16,6 +16,11 @@ body {
   line-height: 1.71;
 }
 
+header {
+  padding: 25px 0;
+
+}
+
 header nav a {
   font-weight: 500;
   font-size: 14px;
@@ -44,7 +49,7 @@ header nav a.active {
 
 
 .hero {
-  padding: 100px 0;
+  padding: 200px 0 210px;
   text-align: center;
   background-color: var(--dark);
   color: var(--light);
@@ -71,6 +76,12 @@ header nav a.active {
 }
 
 
+.features {
+  padding-top: 94px;
+  padding-bottom: 118px;
+  margin: 0 auto;
+}
+
 
 .features h3 {
   color: var(--black);
@@ -80,11 +91,21 @@ header nav a.active {
   line-height: 1.17;
 }
 
+.projects {
+  padding: 94px 0;
+}
+
 .projects h2,
 .team h2 {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
+}
+
+.team {
+  padding: 94px 0;
+  background-color: #F5F4FA;
+  ;
 }
 
 .team h6 {
@@ -94,6 +115,11 @@ header nav a.active {
   letter-spacing: 0.03em;
   text-align: center;
   margin-bottom: 10px;
+}
+
+.photo {
+  padding-top: 50px;
+  padding-bottom: 94px;
 }
 
 
@@ -109,6 +135,7 @@ header nav a.active {
 
 footer {
   background-color: var(--dark);
+  padding: 60px 0;
 }
 
 footer .contacts a {
@@ -198,3 +225,9 @@ footer .contacts a:not(:last-child) {
   background-color: var(--blue);
   color: var(--light);
 }
+
+.container {
+  width: 1170px;
+  margin: 0 auto;
+}
+
