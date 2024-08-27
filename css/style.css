@@ -9,6 +9,18 @@
   --light: #F5F4FA;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+
 body {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
@@ -156,14 +168,17 @@ footer .contacts a:not(:last-child) {
 /* portfolio */
 
 .grid {
-  display: flex;
+   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-
+  max-width: 1170px;
+  margin: 0 auto;
+  justify-content: center;
 }
 
 .grid>div {
   border: 1px solid #eee;
+  width: 370px;
 }
 
 .grid h5 {
@@ -197,14 +212,18 @@ footer .contacts a:not(:last-child) {
   margin: 94px auto 50px;
   padding: 0;
   text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
 }
 
 .filters li {
-  display: inline-block;
+  
 }
 
 .filters li:not(:last-child) {
-  margin-right: 8px;
+  
 }
 
 .filters__btn {
@@ -230,4 +249,3 @@ footer .contacts a:not(:last-child) {
   width: 1170px;
   margin: 0 auto;
 }
-
