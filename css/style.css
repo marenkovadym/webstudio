@@ -1,63 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
-
-:root {
-  --dark: #2F303A;
-  --blue: #2196F3;
-  --black: #212121;
-  --gray: #757575;
-  --light: #F5F4FA;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-ul,
-ol {
-  list-style-type: none;
-}
-
-
-body {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-}
-
-header {
-  padding: 25px 0;
-
-}
-
-header nav a {
-  font-weight: 500;
-  font-size: 14px;
-  color: var(--black);
-  text-decoration: none;
-  margin-right: 50px;
-  line-height: 1.17;
-}
-
-
-header nav a.active {
-  color: var(--blue);
-}
-
-
-.contacts a {
-  color: var(--gray);
-  font-weight: 500;
-  line-height: 1.17;
-  text-decoration: none;
-}
-
-.contacts a.active {
-  color: var(--blue);
-}
+@import url("header.css");
+@import url("footer.css");
+@import url("portfolio.css");
 
 
 .hero {
@@ -88,12 +31,12 @@ header nav a.active {
 }
 
 
+
 .features {
   padding-top: 94px;
   padding-bottom: 118px;
   margin: 0 auto;
 }
-
 
 .features h3 {
   color: var(--black);
@@ -103,30 +46,21 @@ header nav a.active {
   line-height: 1.17;
 }
 
+
+
 .projects {
   padding: 94px 0;
 }
 
 .projects h2,
 .team h2 {
-  font-weight: 700;
+  margin-bottom: 50px;
+  font-family: Roboto;
   font-size: 36px;
-  line-height: 1.17;
-}
-
-.team {
-  padding: 94px 0;
-  background-color: #F5F4FA;
-  ;
-}
-
-.team h6 {
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 1.17;
+  font-weight: 700;
+  line-height: 42.19px;
   letter-spacing: 0.03em;
   text-align: center;
-  margin-bottom: 10px;
 }
 
 .photo {
@@ -135,119 +69,56 @@ header nav a.active {
 }
 
 
-.team__potition {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 1.17;
+
+.team {
+  padding-top: 94px;
+  background-color: #f5f4fa;
+  padding-bottom: 124px;
+}
+
+.team h6 {
+  font-family: Roboto;
+  margin-top: 30px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16.41px;
   letter-spacing: 0.03em;
-  text-align: center;
-  color: var(--gray);
+  color: #212121;
+  margin-bottom: 10px;
+  margin-top: 30px;
+}
+
+.team__flex {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.team__card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+  flex-basis: 270px;
   box-shadow: 0px 2px 1px 0px #00000033;
 
-  box-shadow: 0px 1px 1px 0px #00000024;
+box-shadow: 0px 1px 1px 0px #00000024;
 
-  box-shadow: 0px 1px 3px 0px #0000001F;
-
+box-shadow: 0px 1px 3px 0px #0000001F;
 }
 
-
-footer {
-  background-color: var(--dark);
-  padding: 60px 0;
-}
-
-footer .contacts a {
+.team__card img {
   display: block;
+  width: 100%;
 }
 
-footer .contacts a:not(:last-child) {
-  margin-bottom: 10px;
-}
-
-.address {
-  color: #F5F4FA;
-}
-
-
-
-
-/* portfolio */
-
-.grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-  max-width: 1170px;
-  margin: 0 auto;
-  justify-content: center;
-}
-
-.grid>div {
-  border: 1px solid #eee;
-  width: 370px;
-}
-
-.grid h5 {
-  margin-bottom: 4px;
-}
-
-.grid h5 a {
-  color: #212121;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 2;
-  letter-spacing: 0.06em;
-  text-align: left;
-  text-decoration: none;
-  padding: 0 10px;
-}
-
-.grid .tag {
-  font-size: 16px;
+.team__potition {
+  font-family: Roboto;
+  max-width: 270px;
+  font-size: 14px;
   font-weight: 400;
-  line-height: 1.87;
+  line-height: 24px;
   letter-spacing: 0.03em;
-  text-align: left;
   color: #757575;
-  text-decoration: none;
-  padding: 0 10px;
-}
-
-.filters {
-  list-style: none;
-  margin: 94px auto 50px;
-  padding: 0;
-  text-align: center;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 8px;
-}
-
-.filters li {}
-
-.filters li:not(:last-child) {}
-
-.filters__btn {
-  background-color: var(--light);
-  border: none;
-  padding: 6px 22px;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 1.62;
-  letter-spacing: 0.03em;
-  text-align: center;
-  border-radius: 4px;
-  font-family: "Roboto", sans-serif;
-  color: var(--black);
-}
-
-.filters__btn.active {
-  background-color: var(--blue);
-  color: var(--light);
-}
-
-.container {
-  width: 1170px;
-  margin: 0 auto;
 }
