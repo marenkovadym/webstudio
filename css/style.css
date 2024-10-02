@@ -4,13 +4,33 @@
 
 
 .hero {
+  position: relative;
   padding: 200px 0 210px;
   text-align: center;
   background-color: var(--dark);
   color: var(--light);
+  background-image: url('../images/hero.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.hero::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  content: '';
+  /* width: 100%;
+  height: 100%; */
+  background-color: rgba(47, 48, 58, 0.40);
+  z-index: 1;
 }
 
 .hero h1 {
+  position: relative;
+  z-index: 2;
   font-weight: 900;
   font-size: 44px;
   width: 696px;
@@ -20,6 +40,8 @@
 }
 
 .hero button {
+  position: relative;
+  z-index: 2;
   padding: 10px 32px;
   background-color: var(--blue);
   color: var(--light);
@@ -33,6 +55,8 @@
 
 
 .features {
+  display: flex;
+  gap: 30px;
   padding-top: 94px;
   padding-bottom: 118px;
   margin: 0 auto;
@@ -45,6 +69,8 @@
   text-transform: uppercase;
   line-height: 1.17;
 }
+
+
 
 
 
@@ -64,8 +90,11 @@
 }
 
 .photo {
+  display: flex;
+  gap: 30px;
   padding-top: 50px;
   padding-bottom: 94px;
+  justify-content: center;
 }
 
 
