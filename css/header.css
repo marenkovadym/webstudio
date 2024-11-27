@@ -71,7 +71,8 @@ a {
   overflow: hidden;
 }
 
-.header_navigation--item a::after {
+.header_navigation--item a::after,
+.header_right--link::after {
   content: "";
   position: absolute;
   bottom: 0px;
@@ -113,4 +114,5 @@ a {
   display: flex;
   align-items: center;
   position: relative;
+  overflow: hidden;
 }
