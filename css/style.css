@@ -1,6 +1,7 @@
 @import url("header.css");
 @import url("footer.css");
 @import url("portfolio.css");
+@import url("modal.css");
 
 
 .hero {
@@ -92,12 +93,29 @@
 .photo {
   display: flex;
   gap: 30px;
-  padding-top: 50px;
   padding-bottom: 94px;
   justify-content: center;
 }
 
+.photo--card {
+  position: relative;
+}
 
+.main_third--text {
+  position: absolute;
+  top: 224px;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16.41px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  background-color: #2F303ACC;
+  padding: 27px 0;
+  width: 100%;
+}
 
 .team {
   padding-top: 94px;
@@ -148,6 +166,7 @@
   line-height: 24px;
   letter-spacing: 0.03em;
   color: #757575;
+  margin-bottom: 16px;
 }
 
 
@@ -181,7 +200,7 @@
 .team__socials a svg {
   height: 20px;
   width: 20px;
-  
+
 }
 
 .team__socials a svg path {
