@@ -51,7 +51,7 @@
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.03em;
-  transition: all .3s ease-in-out;
+  transition: opacity .25s cubic-bezier(0.4, 0, 0.2, 1);
   opacity: 0;
   pointer-events: none;
   z-index: -1;
@@ -107,6 +107,13 @@
   border-radius: 4px;
   font-family: "Roboto", sans-serif;
   color: var(--black);
+  transition: background-color .25s cubic-bezier(0.4, 0, 0.2, 1),
+  color .25s cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    color: #fff;
+    background-color: var(--blue);
+  }
 }
 
 .filters__btn.active {

@@ -60,7 +60,6 @@ a {
   display: flex;
   align-items: center;
   position: relative;
-  transition: 0.3s;
   font-family: Roboto;
   font-size: 14px;
   font-weight: 500;
@@ -69,6 +68,7 @@ a {
   color: #212121;
   height: 60px;
   overflow: hidden;
+  transition: color .25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header_navigation--item a::after,
@@ -81,12 +81,12 @@ a {
   border-radius: 2px;
   width: 100%;
   background-color: #2196f3;
-  transition: all .3s ease-in-out;
+  transition: left .25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header_navigation--item a:hover,
-.header_right--link:hover {
-  transition: 0.5s;
+.header_right--link:hover,
+a.curent_page--link {
   color: #2196f3;
 
   &::after {
@@ -104,7 +104,7 @@ a {
 }
 
 .header_right--link {
-  transition: 0.5s;
+  transition: color .25s cubic-bezier(0.4, 0, 0.2, 1);
   font-family: Roboto;
   font-size: 14px;
   font-weight: 500;
@@ -116,3 +116,4 @@ a {
   position: relative;
   overflow: hidden;
 }
+
