@@ -2,6 +2,7 @@
 @import url("footer.css");
 @import url("portfolio.css");
 @import url("modal.css");
+@import url("animation.css");
 
 
 .hero {
@@ -56,8 +57,7 @@
   cursor: pointer;
 
   &:hover {
-    background-color: #fff;
-    color: #2196F3;
+    animation: 0.65s animateBtn;
   }
 }
 
